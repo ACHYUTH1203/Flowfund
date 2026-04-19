@@ -37,7 +37,6 @@ A prototype that converts monthly loan burden into small daily debits from a dig
 ├── scripts/
 │   ├── seed_demo.py       wipes + seeds DB with a 30-day simulated history
 │   └── seed_rag.py        builds the FAISS index from corpus/
-├── tests/                 pytest suite (loan_simulator + risk)
 ├── pyproject.toml         Poetry-managed Python deps
 └── .env.example           copy to .env and add your OPENAI_API_KEY
 ```
@@ -71,13 +70,6 @@ cd frontend && npm run dev
 ```
 
 The Vite dev server proxies API calls (`/wallets`, `/loans`, `/users`, `/ask`, `/health`) to the FastAPI backend on port 8000, so the same relative URLs work in dev and production.
-
-## Tests
-
-```bash
-poetry run pytest
-# 26 tests across loan_simulator and risk engines
-```
 
 ## API endpoints (summary)
 
