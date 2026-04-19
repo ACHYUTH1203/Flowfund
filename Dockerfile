@@ -27,7 +27,7 @@ RUN pip install --no-cache-dir poetry==2.1.4
 # inside the container - we don't need isolation here).
 COPY pyproject.toml poetry.lock ./
 RUN poetry config virtualenvs.create false \
-    && poetry install --no-root --without dev
+    && poetry install --no-root
 
 # Backend source.
 COPY app/ ./app/
