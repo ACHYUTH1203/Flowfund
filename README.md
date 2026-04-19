@@ -38,8 +38,6 @@ A prototype that converts monthly loan burden into small daily debits from a dig
 │   ├── seed_demo.py       wipes + seeds DB with a 30-day simulated history
 │   └── seed_rag.py        builds the FAISS index from corpus/
 ├── tests/                 pytest suite (loan_simulator + risk)
-├── Dockerfile             multi-stage: Node frontend build → Python runtime
-├── render.yaml            Render deploy config
 ├── pyproject.toml         Poetry-managed Python deps
 └── .env.example           copy to .env and add your OPENAI_API_KEY
 ```
@@ -73,24 +71,6 @@ cd frontend && npm run dev
 ```
 
 The Vite dev server proxies API calls (`/wallets`, `/loans`, `/users`, `/ask`, `/health`) to the FastAPI backend on port 8000, so the same relative URLs work in dev and production.
-
-## Deploy to Render (5 minutes)
-
-The repo already contains a `Dockerfile` and `render.yaml` so deployment is one-click.
-
-1. **Push the repo to GitHub** (see the git steps below if you haven't yet).
-2. Log in to [render.com](https://render.com/) → **New +** → **Web Service**.
-3. Connect the GitHub repo. Render will detect `render.yaml` and pre-fill everything.
-4. In the **Environment** tab, add:
-   - `OPENAI_API_KEY` → *(paste your key)*
-5. Click **Create Web Service**. The first build takes ~5 minutes (installs Poetry + Python deps, installs npm deps, builds the React bundle, seeds the demo DB + FAISS index).
-6. When it's green, visit `https://clickpe-lite.onrender.com` (or whatever name you chose).
-
-### Important notes on the free tier
-
-- The service **sleeps after 15 minutes of inactivity**. First request after sleep takes ~30s to wake up.
-- Disk is **ephemeral** — the SQLite DB and FAISS index reset on every wake. Seed scripts run automatically on every container start so state always starts from the same demo baseline. Chat history does not persist across restarts.
-- To move to a persistent setup, switch `DATABASE_URL` in `.env` to a Postgres URL (Render has a free managed Postgres) and move FAISS to a paid disk.
 
 ## Tests
 
