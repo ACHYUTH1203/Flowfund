@@ -55,7 +55,7 @@ async def lifespan(app: FastAPI):
     settings = get_settings()
     assistant_settings = get_assistant_settings()
 
-    logger.info("Starting ClickPe Lite")
+    logger.info("Starting FlowFund")
     logger.info("  DATABASE_URL     : %s", _mask_db_url(settings.database_url))
     logger.info("  OPENAI_API_KEY   : %s", _mask_secret(settings.openai_api_key))
     logger.info(
@@ -77,7 +77,7 @@ async def lifespan(app: FastAPI):
     logger.info("Shutting down.")
 
 
-app = FastAPI(title="ClickPe Lite", version="0.1.0", lifespan=lifespan)
+app = FastAPI(title="FlowFund", version="0.1.0", lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,

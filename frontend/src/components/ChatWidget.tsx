@@ -78,7 +78,7 @@ export default function ChatWidget({ loanId }: Props) {
           <div className="flex items-center justify-between border-b border-slate-200 bg-slate-50 px-4 py-3">
             <div>
               <div className="text-sm font-semibold text-slate-900">
-                ClickPe Assistant
+                FlowFund Assistant
               </div>
               <div className="text-xs text-slate-500">
                 {loanId ? `Context: Loan #${loanId}` : "General mode"}

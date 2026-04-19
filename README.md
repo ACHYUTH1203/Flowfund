@@ -1,4 +1,4 @@
-# ClickPe Lite — Smart Daily Loan Engine
+# FlowFund — Smart Daily Loan Engine
 
 A prototype that converts monthly loan burden into small daily debits from a digital wallet — built for small business owners who earn daily but get charged monthly by traditional lenders. Includes portfolio-level risk scoring, an eligibility calculator, and a RAG-based AI assistant grounded in the user's own financial history.
 

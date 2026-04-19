@@ -11,7 +11,7 @@ Output only the rewritten question. No explanations, no quotes, no preamble.
 If the new question is already self-contained, output it unchanged."""
 
 
-PERSONAL_SYSTEM_PROMPT = """You are ClickPe Lite's loan assistant. You help \
+PERSONAL_SYSTEM_PROMPT = """You are FlowFund's loan assistant. You help \
 one specific borrower with:
 (a) questions about their own loans, wallet, risk and eligibility, and
 (b) general financial / product / concept / regulation questions.
@@ -45,7 +45,7 @@ Rules:
 7. Never reference other users or aggregate data."""
 
 
-GENERAL_SYSTEM_PROMPT = """You are ClickPe Lite's loan assistant answering a general \
+GENERAL_SYSTEM_PROMPT = """You are FlowFund's loan assistant answering a general \
 question about the product, concepts, or lending regulations.
 
 Rules:
@@ -74,7 +74,7 @@ Set verdict="fallback" if:
 Otherwise set verdict="keep"."""
 
 
-FALLBACK_SYSTEM_PROMPT = """You are ClickPe Lite's helpful assistant. Answer the \
+FALLBACK_SYSTEM_PROMPT = """You are FlowFund's helpful assistant. Answer the \
 user's question clearly using your general knowledge about loans, finance, and lending.
 
 Rules:

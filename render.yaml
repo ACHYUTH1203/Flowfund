@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: clickpe-lite
+    name: flowfund
     runtime: docker
     plan: free
     dockerfilePath: ./Dockerfile

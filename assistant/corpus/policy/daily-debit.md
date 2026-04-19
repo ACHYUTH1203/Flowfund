@@ -1,6 +1,6 @@
 # How Daily Debit Works
 
-ClickPe Lite converts your monthly loan burden into small daily repayments. Each day, the system attempts to debit the daily repayment amount from your linked wallet. This happens automatically once per day in the morning.
+FlowFund converts your monthly loan burden into small daily repayments. Each day, the system attempts to debit the daily repayment amount from your linked wallet. This happens automatically once per day in the morning.
 
 The order of operations each day is:
 1. Your wallet accrues whatever income you add to it.

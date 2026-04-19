@@ -1,6 +1,6 @@
 # FAQ: How much should I keep in my wallet?
 
-Question: What's the right amount to keep in my ClickPe wallet?
+Question: What's the right amount to keep in my FlowFund wallet?
 
 Answer: At minimum, three times your daily repayment amount. If your daily repayment is Rs 200, keep at least Rs 600 in the wallet at all times.
 

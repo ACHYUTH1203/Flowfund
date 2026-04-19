@@ -91,7 +91,7 @@ export default function Dashboard() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <div>
             <div className="text-lg font-bold text-slate-900">
-              ClickPe Lite
+              FlowFund
             </div>
             <div className="text-xs text-slate-500">
               Smart Daily Loan Engine
