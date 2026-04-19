@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: clickpe-lite
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      # Paste your key into the Render dashboard under "Environment".
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: DATABASE_URL
+        value: sqlite:///./flow_fund.db

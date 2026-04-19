@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# Environment - contains secrets (OPENAI_API_KEY). Use .env.example as template.
+.env
+.env.local
+.env.*.local
+
+# SQLite databases (regenerate with scripts/seed_demo.py)
+*.db
+*.db-journal
+
+# FAISS vector index artefacts (regenerate with scripts/seed_rag.py)
+assistant/.faiss_index/
+
+# Frontend build output + Node modules
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/.vite/
+frontend/*.local
+
+# IDE / OS / misc
+.vscode/
+.idea/
+.claude/
+*.swp
+.DS_Store
+Thumbs.db
