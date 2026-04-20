@@ -80,9 +80,6 @@ export default function ChatWidget({ loanId }: Props) {
               <div className="text-sm font-semibold text-slate-900">
                 FlowFund Assistant
               </div>
-              <div className="text-xs text-slate-500">
-                {loanId ? `Context: Loan #${loanId}` : "General mode"}
-              </div>
             </div>
           </div>
 
